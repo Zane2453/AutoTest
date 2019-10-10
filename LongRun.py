@@ -1,9 +1,9 @@
 from selenium import webdriver
-from pyvirtualdisplay import Display
+# from pyvirtualdisplay import Display
 import time, random
 
-display = Display(visible=0, size=(800, 600))
-display.start()
+'''display = Display(visible=0, size=(800, 600))
+display.start()'''
 driver = webdriver.Chrome()
 
 def voteAns():

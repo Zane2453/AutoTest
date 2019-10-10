@@ -75,8 +75,8 @@ def toProcessing():
 
 if __name__ == "__main__":
     driver.maximize_window()
-    driver.get("https://aipoll.nctu.me/pollstart/2")
-    driver.get("https://aipoll.nctu.me/vote/4")
+    driver.get("https://aipoll.nctu.me/pollstart/0")
+    driver.get("https://aipoll.nctu.me/vote/1")
     main_window = driver.current_window_handle
 
     t = threading.Thread(target=toProcessing, daemon=True)
@@ -87,8 +87,8 @@ if __name__ == "__main__":
             time.sleep(5)
             count = 1
             driver.delete_all_cookies()
-            driver.get("https://aipoll.nctu.me/pollstart/2")
-            driver.get("https://aipoll.nctu.me/vote/4")
+            driver.get("https://aipoll.nctu.me/pollstart/0")
+            driver.get("https://aipoll.nctu.me/vote/1")
             time.sleep(3)
             Start()
 
