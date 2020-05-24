@@ -17,7 +17,8 @@ if __name__ == "__main__":
 
     pygame.mixer.init()
     pygame.mixer.music.load("./audio/Background.mp3")
-    pygame.mixer.music.play()
+    while True:
+        pygame.mixer.music.play()
 
-    while pygame.mixer.music.get_busy():
-        pygame.time.Clock().tick(10)
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
